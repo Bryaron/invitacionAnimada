@@ -126,7 +126,7 @@ p a:hover {
 
   left: 61%;
   
-  background-image: url(/assets/img/peppaHada.png); 
+  background-image: url(assets/img/peppaHada.png); 
   background-repeat: no-repeat;
   background-size: 150px;
     
@@ -229,7 +229,7 @@ p a:hover {
   top:71.5%;
 
   
-  background-image: url(/assets/img/peppaFamiliaDerecha.png); 
+  background-image: url(assets/img/peppaFamiliaDerecha.png); 
   background-repeat: no-repeat;
   background-size: 250px;
     
@@ -246,7 +246,7 @@ p a:hover {
   top:71.5%;
 
   
-  background-image: url(/assets/img/peppaFamiliaIzquierda.png); 
+  background-image: url(assets/img/peppaFamiliaIzquierda.png); 
   background-repeat: no-repeat;
   background-size: 250px;
     
