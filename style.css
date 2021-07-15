@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background: url(https://www.nawpic.com/media/2020/desktop-backgrounds-nawpic-1.png);
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  img{
+    max-width: 100%;
+  }
+
+  section{
+    height:700px;
+    width: 350px;  
+    position:relative;
+    
+  }
+
+  /* Posicion Absoluta */
+
+  .fondo , .peppa ,.peppaFamilia ,.peppaFamiliaDerecha,.peppaFamiliaIzquierda{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+  }
+
+  .molde{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+  }
+
+  
+  
+   /* Animacion Fondo */
+
+  .fondo , .img-animate{
+    animation: 1s moveicon infinite linear alternate;
+  }
+  
+  .fondo{
+    background-image: url(/assets/img/carta.jpg);
+    background-size: 100%; 
+  }
+  
+  @keyframes moveicon{
+    to{
+      transform: translatey(-25px);
+    }
+  }
+
+
+ /*  Texto */
+
+ h1{
+  text-align:center;
+  font-family: cursive;
+  font-size: 30px;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+/*Neon*/
+p {
+  text-align: center;
+  font-size: 3em;
+  margin: 20px 0 20px 0;
+  
+}
+
+a {
+  -webkit-text-stroke: 2px skyblue;
+  color: transparent; 
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+p a {
+  color: #fff;
+  font-family: 'Pacifico', cursive;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+p a:hover {
+  color: #ff1177;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+/*brillo*/
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+      0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+      0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+  }
+}
+
+
+/* Peppa volando */
+
+
+
+
+.peppa{
+
+  height: 150px;
+  width: 150px;
+
+  left: 61%;
+  
+  background-image: url(/assets/img/peppaHada.png); 
+  background-repeat: no-repeat;
+  background-size: 150px;
+    
+}
+
+.fly{
+  animation: 6s flyicon infinite linear normal ;
+}
+
+@keyframes flyicon {
+
+  20%{transform:translateX(-450px) translateY(280px)  } 
+
+  40%{transform:translateX(-450px) translateY(280px) scaleX(-1)}
+
+  60%{transform: scaleX(-1) translateX(110px) translateY(620px)}
+
+  
+
+  80%{transform: scaleX(-1) translateX(110px) translateY(620px) }
+
+
+}
+
+@media (max-width: 400px) {
+  
+  
+
+  @keyframes flyicon{
+
+  
+
+    
+    20%  {transform:translateX(-320px) translateY(240px) }
+    
+    40% { transform:translateX(-320px) translateY(240px) scaleX(-1)}
+
+    60% {transform: scaleX(-1) translateX(100px) translateY(560px)}
+
+
+    80%{transform: scaleX(-1) translateX(100px) translateY(560px)}
+
+    100%{transform:translateX(0px) translateY(0px)}
+
+    
+    }
+}
+
+/* Molde */
+
+
+.molde {
+
+
+  border: 4px solid whitesmoke;
+
+
+  top:10%;
+
+  height: 80%;
+  width: 80%;
+
+  border-radius: 40% 40% 10% 10%;
+  
+  
+  background-color:rgba(34,34,34,0.3);
+  
+
+  
+}
+
+
+/* Imagenes en el borde */
+
+/* .peppaFamilia{
+
+  border: 4px dashed black;
+
+  height: 200px;
+  width: 260px;
+
+  left: -13px;
+  top:71.5%;
+
+  
+  background-image: url(/assets/img/peppaFamilia.png); 
+  background-repeat: no-repeat;
+  background-size: 250px;
+    
+} */
+
+.peppaFamiliaDerecha{
+
+  
+
+  height: 200px;
+  width: 250px;
+
+  left: 110px;
+  top:71.5%;
+
+  
+  background-image: url(/assets/img/peppaFamiliaDerecha.png); 
+  background-repeat: no-repeat;
+  background-size: 250px;
+    
+}
+
+.peppaFamiliaIzquierda{
+
+  
+
+  height: 200px;
+  width: 260px;
+
+  left: -13px;
+  top:71.5%;
+
+  
+  background-image: url(/assets/img/peppaFamiliaIzquierda.png); 
+  background-repeat: no-repeat;
+  background-size: 250px;
+    
+}
